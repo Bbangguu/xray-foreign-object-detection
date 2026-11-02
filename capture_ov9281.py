@@ -5,7 +5,7 @@ from ultralytics import YOLO
 from preprocess_ir import preprocess_ir
 
 # 1. 저장된 X-ray YOLOv8n 모델
-MODEL_PATH = Path("models/xguard_yolov8n_best.pt")
+MODEL_PATH = Path("xguard_yolov8n_best.pt")
 assert MODEL_PATH.exists(), f"모델 없음: {MODEL_PATH}"
 
 model = YOLO(str(MODEL_PATH))
